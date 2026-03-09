@@ -2,8 +2,6 @@ version: 0.0
 os: linux
 
 files:
-  # source: S3에 업로드된 zip 파일(배포 패키지)의 내부 경로를 의미하며 "/"는 루트 경로의 전체를 가져온다는 뜻
-  # destination: EC2 인스턴스에서 애플리케이션이 배포될 경로
   - source: /
     destination: /home/ubuntu/nextjs-aws-test
 
@@ -13,7 +11,6 @@ permissions:
     group: ubuntu
 
 hooks:
-	# 어플리케이션이 시작할 타이밍에 scripts/start-nextjs.sh 파일을 실행하겠다는 뜻
   ApplicationStart:
     - location: scripts/start-nextjs.sh
       timeout: 60

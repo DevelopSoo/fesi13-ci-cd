@@ -22,7 +22,8 @@ export default function SimpleAnimationTest() {
       <h1 className="text-2xl font-bold mb-6">애니메이션 성능 비교</h1>
       <p className="mb-4 text-gray-700">
         DevTools의 Performance 탭을 열고 기록(Record)을 시작한 후, 각 버튼을
-        클릭하여 애니메이션이 진행되는 3초 동안의 Main Thread 활동을 비교하세요.
+        클릭하여 애니메이션이 진행되는 3초 동안의 Main Thread 활동을
+        비교하세요.2
       </p>
 
       <div className="flex space-x-4 mb-10">
